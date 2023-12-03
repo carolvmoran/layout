@@ -16,4 +16,7 @@ header {
 }
 main {
   background: #fafafa;
+  @media (max-width: 1024px) {
+    background: #fff;
+  }
 }

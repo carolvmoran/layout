@@ -1,0 +1,96 @@
+.newsletter {
+  width: 100%;
+  height: 120px;
+  padding: 40px 0 42px 0;
+  background: #fafafa;
+  border-top: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1024px) {
+    padding: 24px 0;
+  }
+  &__form {
+    width: 49%;
+    min-width: 952px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      min-width: unset;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      gap: 8px;
+    }
+    label {
+      width: 32%;
+      color: #000;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: normal;
+      @media (max-width: 1024px) {
+        width: 85%;
+        color: #353535;
+        text-align: center;
+      }
+    }
+  }
+  &__input,
+  &__btn {
+    height: 100%;
+    border: none;
+    font-weight: 400;
+  }
+  &__input {
+    padding: 0 24px 0 24px;
+    outline-color: #faa500;
+    width: 79%;
+    border: 1px solid #353535;
+    border-right: none;
+    border-radius: 4px 0px 0px 4px;
+    @media (max-width: 1024px) {
+      border-right: 1px solid #353535;
+      width: 68%;
+      border-radius: 4px;
+    }
+  }
+  &__input,
+  &__input::placeholder {
+    background: #fff;
+    color: #353535;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 0px 4px 4px 0;
+    border: 1px solid #faa500;
+    background: #faa500;
+    width: 21%;
+    cursor: pointer;
+    @media (max-width: 1024px) {
+      border-radius: 4px;
+      font-size: 14px;
+      width: 26%;
+    }
+  }
+  &__container {
+    width: 66%;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1024px) {
+      width: 82%;
+      height: 26px;
+      justify-content: space-between;
+    }
+  }
+}

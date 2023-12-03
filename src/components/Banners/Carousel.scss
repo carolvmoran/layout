@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.carousel-item {
+  &__container {
+    position: relative;
+    width: 100%;
+    img {
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+  }
+  &__container-text {
+    position: absolute;
+    top: 151px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 66%;
+    @media (max-width: 1024px) {
+      width: 62%;
+      top: 63px;
+    }
+    h1 {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 40px;
+      @media (max-width: 1024px) {
+        font-size: 30px;
+      }
+    }
+    p {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 400;
+      max-width: 467px;
+      margin-bottom: 32px;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        max-width: unset;
+      }
+    }
+    button {
+      font-family: Montserrat;
+      border-radius: 10px;
+      background: #faa500;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      width: 128px;
+      height: 48px;
+      border: none;
+      cursor: pointer;
+      @media (max-width: 1024px) {
+        width: 76px;
+        height: 28px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.carousel {
+  .slick-arrow {
+    background-image: url(../../assets/_icon-prev.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32px;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 10%;
+    transform: translateY(-50%) rotate(180deg);
+    cursor: pointer;
+    &::before {
+      display: none;
+    }
+  }
+  .slick-prev {
+    left: 10%;
+    cursor: pointer;
+    &::before {
+      display: none;
+    }
+  }
+  .slick-dots {
+    bottom: 24px;
+    li {
+      margin: 0 8px;
+    }
+    li button {
+      width: 16px;
+      height: 16px;
+      border: 1px solid #faa500;
+      border-radius: 50%;
+      cursor: pointer;
+      @media (max-width: 1024px) {
+        width: 8px;
+        height: 8px;
+      }
+    }
+    li button::before {
+      display: none;
+    }
+    li.slick-active button {
+      background: #faa500;
+    }
+  }
+}

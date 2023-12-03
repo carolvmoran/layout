@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.carousel-brands {
+  h4 {
+    color: #353535;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 74px 0 17px 0;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    &__container {
+      width: 16%;
+      padding: 11px 0 14px 0;
+      display: flex !important;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 4px;
+
+      &-mobile {
+        width: 95% !important;
+        max-width: 308px;
+      }
+      img {
+        width: 100%;
+        max-width: 308px;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+}

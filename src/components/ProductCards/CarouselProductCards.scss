@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.carousel-product-cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0 32px;
+  .slick-slider.slick-initialized {
+    width: 83%;
+  }
+  h3 {
+    color: #353535;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    @media (max-width: 1024px) {
+      font-size: 24px;
+    }
+  }
+  &__container {
+    margin: 0 8px;
+    width: auto !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+  &__container-text {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    .price {
+      color: #353535;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 2px 0;
+    }
+    h4 {
+      color: #000;
+      font-size: 16px;
+      font-weight: 400;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .description {
+      margin: 8px 0;
+      color: #000;
+      height: 54px;
+      font-size: 12px;
+      font-weight: 400;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    a.buy-button {
+      width: 100%;
+      height: 35px;
+      background: #faa500;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  &__container-colors {
+    display: flex;
+    gap: 8px;
+    padding: 8px 0;
+    li {
+      border-radius: 4px;
+    }
+  }
+
+  .slick-arrow {
+    background-image: url(../../assets/_icon-prev.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32px;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+    cursor: pointer;
+    &::before {
+      display: none;
+    }
+  }
+  .slick-prev {
+    left: 0;
+    cursor: pointer;
+    &::before {
+      display: none;
+    }
+  }
+}

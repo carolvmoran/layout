@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.carousel-benefits {
+  .slick-slide {
+    @media (max-width: 480px) {
+      width: 90vw !important;
+      max-width: 298px;
+    }
+  }
+  h4 {
+    color: #353535;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 21px 0;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    &__container {
+      width: 16%;
+      padding: 11px 0 14px 0;
+      display: flex !important;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 4px;
+      background: #efefef;
+
+      @media (max-width: 480px) {
+        width: 95% !important;
+      }
+      &-mobile {
+        margin: 0 7px;
+        width: unset;
+      }
+    }
+    &__container-text {
+      width: 65%;
+
+      p {
+        color: #000;
+        font-size: 12px;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      h5 {
+        color: #353535;
+        font-size: 14px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

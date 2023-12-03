@@ -1,0 +1,44 @@
+.banner-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0;
+  @media (max-width: 1024px) {
+    margin: 23px 0 39px 0;
+  }
+
+  &__container {
+    width: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+  &__container-text {
+    width: 26%;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+    h4 {
+      color: #000;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    p {
+      color: #000;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  img {
+    width: 69%;
+    @media (max-width: 1024px) {
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+}
